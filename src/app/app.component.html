@@ -27,6 +27,31 @@
     <p *ngIf="displayMsg" id="textDisplay">Hello World!</p>
   </div>
 
+  <div class="stock">
+    <input type="text" placeholder="Company" name="company" [(ngModel)]="stockDetails['company']" required>
+    <input type="text" placeholder="Code" name="code" [(ngModel)]="stockDetails['code']" required>
+    <input type="number" placeholder="Price" name="price" [(ngModel)]="stockDetails['price']" required><br>
+    <div>
+      <input type="radio" id="sensex" name="indexName" [(ngModel)]="stockDetails['indexName']" value="Sensex">
+      <label for="indexName">Sensex</label><br>
+      <input type="radio" id="NASDAQ" name="indexName" [(ngModel)]="stockDetails['indexName']" value="NASDAQ">
+      <label for="indexName">NASDAQ</label><br>
+      <input type="radio" id="nifty" name="indexName" [(ngModel)]="stockDetails['indexName']" value="Nifty">
+      <label for="indexName">Nifty</label>
+    </div>
+    <br>
+
+    <input type="checkbox" placeholder="Price" name="confirm" [(ngModel)]="stockDetails['confirm']" required><label for="price"> I confirm the details provided.</label>
+    <br>
+    <br>
+    <!-- <button>Submit</button> -->
+    <p>Company Name: {{stockDetails['company']}}</p>
+    <p>Company Code: {{stockDetails['code']}}</p>
+    <p>Company Price: {{stockDetails['price']}}</p>
+    <p>Company Index: {{stockDetails['indexName']}}</p>
+    <p>Confirm: {{stockDetails['confirm']}}</p>
+  </div>
+
   <div class="scoreBoard">
     <p>Using [ngStyle]</p>
     <p *ngFor="let item of scores; index as i">

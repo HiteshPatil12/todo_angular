@@ -33,6 +33,11 @@
     padding: 10px;
     margin: 10px;
 }
+.stock{
+    background: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
 .zeroToFourty{
     color: red;
     font-size: 24px;

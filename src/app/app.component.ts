@@ -13,9 +13,20 @@ export class AppComponent {
   drinkName = "";
   counter = 0;
   displayMsg = false;
-  scores = [90, 35, 68, 99, 23, 55]
+  scores = [90, 35, 68, 99, 23, 55];
+  stockDetails = [
+      {
+        "company":"",
+        "code":"",
+        "price":0,
+        "indexName":"",
+        "confirm":"false",
+      }
+  ];
 
   constructor(){
+    // JSON.stringify(this.stockDetails);
+    // console.log(this.stockDetails);
     let taskFronLocalStorage = localStorage.getItem("tasks");
     this.tasks = JSON.parse(taskFronLocalStorage);
 
@@ -92,7 +103,7 @@ export class AppComponent {
 
   // Scores using getStyle
   getStyle(value){
-    console.log(value['item']);
+    // console.log(value['item']);
     if(value['item'] != '' || value['item'] == undefined){
       if(value['item'] < 41){
         return ({"color": "red", "font-size": "24px","font-weight": "600"})
