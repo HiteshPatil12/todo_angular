@@ -1,0 +1,50 @@
+.marPad5{
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.center{
+    text-align: center;
+}
+.pointer{
+    cursor: pointer;
+}
+.margin10{
+    margin: 10px;
+}
+.warning{
+    color: red;
+}
+.counterBody{
+    background: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
+.boldFont{
+    font-weight: 600;
+    font-size: 30px;
+}
+.buttonTextShow{
+    background: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
+.scoreBoard{
+    background: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
+.zeroToFourty{
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+}
+.fourtyoneToEighty{
+    color: rgb(255, 145, 0); 
+    font-size: 16px;
+    font-weight: 600;
+}
+.eightyoneToHundred{
+    color: rgb(2, 206, 63); 
+    font-size: 32px;
+    font-weight: 600;
+}
