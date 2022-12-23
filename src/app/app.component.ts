@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  fromParentMsg = 'I am parent component data.'
+
   title = 'todo';
   task = "";
   tasks = [];
@@ -23,6 +25,10 @@ export class AppComponent {
         "confirm":"false",
       }
   ];
+
+  getDataFromChild(e){
+    console.log(e)
+  }
 
   constructor(){
     // JSON.stringify(this.stockDetails);

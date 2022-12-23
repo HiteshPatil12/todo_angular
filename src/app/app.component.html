@@ -1,4 +1,9 @@
+<app-javascript></app-javascript>
+<app-angular></app-angular>
+
 <div class="center">
+  <h1>Parent Component [App]</h1>
+  <app-student [acceptMsgChild]="fromParentMsg" (myOutPut)="getDataFromChild($event)"></app-student>
   <p class="warning" *ngIf="messageToUser !==''">{{messageToUser}}</p>
   <div class="">
     <form>
