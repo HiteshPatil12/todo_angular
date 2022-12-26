@@ -25,6 +25,7 @@ export class AppComponent {
         "confirm":"false",
       }
   ];
+  color="green"
 
   getDataFromChild(e){
     console.log(e)
